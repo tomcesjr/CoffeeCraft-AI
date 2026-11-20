@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - CoffeeCraft AI</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/dashboard.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>☕ CoffeeCraft AI</h1>
+
+        <nav>
+            <a href="/">Home</a>
+            <button id="logoutBtn" type="button">
+                Logout
+            </button>
+        </nav>
+    </header>
+
+    <main class="coffee-dashboard">
+
+        <h2 id="welcome">Welcome!</h2>
+        <p>
+            Discover your perfect coffee with AI.
+            Choose your preferences below.
+        </p>
+
+        <section class="coffee-form-section">
+            <h3>Find Your Perfect Coffee</h3>
+
+            <form id="coffeeForm">
+
+                <label for="temperature">
+                    Temperature
+                </label>
+                <select id="temperature" required>
+                    <option value="Hot">Hot</option>
+                    <option value="Iced">Iced</option>
+                </select>
+
+                <label for="sweetness">
+                    Sweetness
+                </label>
+                <select id="sweetness" required>
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+
+                <label for="strength">
+                    Coffee Strength
+                </label>
+                <select id="strength" required>
+                    <option value="Mild">Mild</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Strong">Strong</option>
+                </select>
+
+                <label for="milk">
+                    Milk Preference
+                </label>
+                <select id="milk" required>
+                    <option value="Whole">Whole Milk</option>
+                    <option value="Oat">Oat Milk</option>
+                    <option value="Almond">Almond Milk</option>
+                    <option value="None">No Milk</option>
+                </select>
+
+                <button id="generateBtn" type="submit">
+                    Generate Coffee Recommendation
+                </button>
+
+            </form>
+        </section>
+
+        <p id="status" role="status"></p>
+
+        <section id="results" hidden>
+            <h3>Your AI Recommendation</h3>
+
+            <article class="recommendation-card">
+                <h4 id="coffeeName"></h4>
+                <p id="coffeeDescription"></p>
+
+                <h4>Ingredients</h4>
+                <ul id="ingredients"></ul>
+
+                <h4>Why This Coffee?</h4>
+                <p id="coffeeReason"></p>
+            </article>
+        </section>
+
+    </main>
+
+</body>
+</html>

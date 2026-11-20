@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - CoffeeCraft AI</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/auth.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>☕ CoffeeCraft AI</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/signup.html">Sign Up</a>
+        </nav>
+    </header>
+
+    <main class="auth-container">
+        <h2>Welcome Back!</h2>
+
+        <form id="loginForm">
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" minlength="8" maxlength="78" required>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <p id="message" role="status"></p>
+
+        <p>Don't have an account? <a href="/signup.html">Sign Up</a></p>
+    </main>
+</body>
+</html>
