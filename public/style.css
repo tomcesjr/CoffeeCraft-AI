@@ -207,3 +207,37 @@ footer {
         padding: 20px;
     }
 }
+
+/* Navigation visibility */
+[hidden] {
+    display: none !important;
+}
+
+/* Navigation links */
+nav span a {
+    margin-left: 15px;
+}
+
+/* Logout button in homepage header */
+#homeLogoutBtn {
+    margin-left: 15px;
+    padding: 10px 16px;
+    background: #875634;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#homeLogoutBtn:hover {
+    background: #684027;
+}
+
+@media (max-width: 600px) {
+    nav span a,
+    #homeLogoutBtn {
+        margin-left: 0;
+        margin-right: 12px;
+    }
+}

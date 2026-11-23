@@ -1,19 +1,38 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoffeeCraft AI</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CoffeeCraft AI - Home</title>
+
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1>☕ CoffeeCraft AI</h1>
-    <nav>
-        <a href="/">Home</a>
-        <a href="/login.html">Login</a>
-        <a href="/signup.html">Sign Up</a>
-    </nav>
+
+        <nav aria-label="Main navigation">
+            <a href="/">Home</a>
+
+            <!-- Links for visitors -->
+            <span id="guestNav">
+                <a href="/login.html">Login</a>
+                <a href="/signup.html">Sign Up</a>
+            </span>
+
+            <!-- Links for authenticated users -->
+            <span id="userNav" hidden>
+                <a href="/dashboard">Dashboard</a>
+                <button id="homeLogoutBtn" type="button">
+                    Logout
+                </button>
+            </span>
+        </nav>
     </header>
 
     <main>
@@ -21,10 +40,13 @@
             <h2>Find Your Perfect Coffee</h2>
 
             <p>
-                Discover personalized coffee drinks powered by artificial intelligence.
+                Discover personalized coffee drinks
+                powered by artificial intelligence.
             </p>
 
-            <a href="/signup.html" class="btn">
+            <a href="/signup.html"
+               id="getStartedBtn"
+               class="btn">
                 Get Started
             </a>
         </section>
@@ -33,6 +55,5 @@
     <footer>
         <p>&copy; 2026 CoffeeCraft AI</p>
     </footer>
-
 </body>
 </html>
